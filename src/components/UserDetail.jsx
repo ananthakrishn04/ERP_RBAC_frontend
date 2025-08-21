@@ -1,4 +1,3 @@
-import React from 'react'
 import { clearCredentials } from '../features/authSlice'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'

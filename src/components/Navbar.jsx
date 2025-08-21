@@ -1,12 +1,9 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { clearCredentials, getUser } from '../features/authSlice';
+import { useSelector } from 'react-redux';
+import { getUser } from '../features/authSlice';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-    const { username, role} = useSelector(getUser)
-    const dispatch = useDispatch()
+    const { role } = useSelector(getUser)
     const navigate = useNavigate()
 
   return (
